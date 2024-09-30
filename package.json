@@ -1,0 +1,29 @@
+{
+  "name": "@yaocong/vue2-ui",
+  "version": "1.0.1",
+  "main": "lib/vue2-ui.common.js",
+  "scripts": {
+    "build:commonjs2": "webpack --config webpack.common.js",
+    "build:umd": "webpack --config webpack.umd.js",
+    "build": "npm run build:commonjs2 && npm run build:umd"
+  },
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CongYao1993/vue2-ui.git"
+  },
+  "keywords": [
+    "组件库",
+    "0 到 1"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "从 0 到 1 搭建组件库",
+  "devDependencies": {
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
