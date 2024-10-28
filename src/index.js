@@ -1,8 +1,13 @@
-// 当组件变得庞大时这部分可自动生成，element-ui 就是采用自动生成的方式
-import hello from "../packages/hello/src/index";
-import log from "../packages/log/src/index";
+import Button from "../packages/button";
 
-export default {
-  hello,
-  log,
+const components = {
+  ycButton: Button,
 };
+
+const install = function (Vue, options = {}) {
+  Object.keys(components).forEach((key) => {
+    Vue.component(key, components[key]);
+  });
+};
+
+export default install;
