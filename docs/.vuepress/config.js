@@ -19,7 +19,7 @@ module.exports = {
         {
           title: "基础组件",
           collapsable: false,
-          children: ["basic/button"],
+          children: ["basic/button", "basic/notice"],
         },
       ],
     },
