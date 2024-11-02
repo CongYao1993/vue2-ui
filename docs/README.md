@@ -4,7 +4,7 @@ heroImage: /icon.png
 heroText: Vue2 UI
 tagline: Vue2 UI 组件库文档
 actionText: 开始使用 →
-actionLink: /components/
+actionLink: /components/guide/introduction
 features:
   - title: 基于 Vue2.X
     details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。

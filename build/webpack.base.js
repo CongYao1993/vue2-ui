@@ -37,7 +37,6 @@ module.exports = {
     },
   },
   plugins: [
-    new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.DefinePlugin({
       "process.env.VERSION": `'${pkg.version}'`,
     }),
