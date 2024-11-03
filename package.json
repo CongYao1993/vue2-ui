@@ -1,10 +1,12 @@
 {
   "name": "@yaocong/vue2-ui",
   "version": "1.0.1",
-  "main": "lib/vue2-ui.common.js",
+  "main": "lib/vue2-ui.min.js",
   "scripts": {
     "build:style": "gulp --gulpfile build/gen-style.js",
     "build:prod": "webpack --config build/webpack.prod.js",
+    "build:components": "webpack --config build/webpack.components.js",
+    "build": "npm run build:style && npm run build:prod && npm run build:components",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "gh-pages -d docs/.vuepress/dist",
